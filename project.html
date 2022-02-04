@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<head>
+    <title>My Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Nav Start -->
+    <nav>
+        <div class="left-side">
+            <a href="index.html">
+                <img src="assets/logo.png" />
+            </a>
+
+            <ul>
+                <li>
+                    <a href="index.html"><b>Home</b></a>
+                </li>
+                <li>
+                    <a href="project.html">My Project</a>
+                </li>
+            </ul>
+        </div>
+        <div class="right-side">
+            <a href="contact.html">Contact Me</a>
+        </div>
+    </nav>
+    <!-- Nav End -->
+
+
+    <div class="form-container">
+        <h2>Add My Project</h2>
+        <form onsubmit="addProject(event)">
+            <div>
+                <label for="input-name">Project Name</label>
+                <input type="text" id="input-name" />
+            </div>
+            <div class="input-date-group">
+                <div>
+                    <label for="input-start-date">Start Date</label>
+                    <input type="date" id="input-start-date" />
+                </div>
+                <div>
+                    <label for="input-end-date">End Date</label>
+                    <input type="date" id="input-end-date" />
+                </div>
+            </div>
+
+            <div>
+                <label for="input-description">Description</label>
+                <textarea id="input-description"></textarea>
+            </div>
+            <div>
+                <label for="name">Technology</label>
+                <div class="input-checkbox-group">
+                    <div>
+                        <input type="checkbox" class="input-tech" id="input-tech-node-js" name="tech[]" value="node-js">
+                        <label for="input-tech-node-js">Node Js</label>
+                        <br>
+                        <input type="checkbox" class="input-tech" id="input-tech-react-js" name="tech[]"
+                            value="react-js"><label for="input-tech-react-js"> React Js</label>
+                        <br>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="input-tech" id="input-tech-next-js" name="tech[]"
+                            value="next-js"><label for="input-tech-next-js"> Next Js</label>
+                        <br>
+                        <input type="checkbox" class="input-tech" id="input-tech-typescript" name="tech[]"
+                            value="typescript"><label for="input-tech-typescript">TypeScript</label>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div>
+                <label for="input-image">Upload Image</label>
+                <div class="input-image-group">
+                    <label for="input-image">
+                        <p>Choose</p>
+                        <img src="assets/file.png" alt="file" />
+                    </label>
+                    <input type="file" id="input-image" hidden />
+                </div>
+            </div>
+
+            <div class="btn-container">
+                <button class="btn-submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="project-container">
+        <h2>My Project</h2>
+        <div class="project-card-container" id="project-card-container">
+            <div class="project-card">
+                <img class="image" src="./assets/square.jpg" alt="">
+                <p class="title">Dumbways Mobile App - 2021</p>
+                <p class="durasi">durasi : 3 bulan</p>
+                <p class="description">App that used for dumbways student, It was
+                    deployed and can downloaded on playstore. Happy download.
+                </p>
+                <div class="icon-container">
+                    <img class="icon" src="./assets/node-js.png" alt="">
+                    <img class="icon" src="./assets/react-js.png" alt="">
+                    <img class="icon" src="./assets/next-js.png" alt="">
+                </div>
+                <div class="button-container">
+                    <button>edit</button>
+                    <button>delete</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="./project.js"></script>
+</body>
+
+</html>

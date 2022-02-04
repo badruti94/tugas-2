@@ -1,0 +1,2 @@
+github : https://github.com/badruti94/tugas-2
+site : https://tugas-2-badru.netlify.app/

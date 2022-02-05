@@ -59,7 +59,7 @@ function renderProject() {
 
 function firstProject() {
     return `<div class="project-card">
-    <img class="image" src="./assets/square.jpg" alt="">
+    <img class="image" src="./assets/dumbways-app.png" alt="">
     <p class="title">Dumbways Mobile App - 2021</p>
     <p class="durasi">durasi : 3 bulan</p>
     <p class="description">App that used for dumbways student, It was
